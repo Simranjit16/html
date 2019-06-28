@@ -1,0 +1,18 @@
+#for installation of apachi in our system
+yum install httpd -y  #for redhat
+apt install httpd -y  #for ubunto
+
+#after installation we check the status of httpd
+systemctl status httpd
+
+#if the httpd server is not active then start it
+systemctl start httpd
+
+#after start the status of httpd we enable it
+systemctl enable httpd
+
+# go to the path where we make our html file
+cd /var/www/html/
+
+# make html file
+vi index.html   #vi filename.html
